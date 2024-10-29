@@ -1,4 +1,7 @@
-# Python code to calculate Major-Specific GPA for FIU BME program with predefined BME courses
+#    By: Asad Mirza, PhD
+#    For: BME Department
+#    Purpose: MATLAB code to calculate Major-Specific GPA for FIU's 
+#    Undergraduate BME program with predefined BME courses
 
 # Define the grading scale
 grade_scale = {
