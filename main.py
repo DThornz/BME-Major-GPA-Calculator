@@ -27,6 +27,7 @@ courses = [
     ('B+', 3),  # BME 4908 - Senior Design Project
     ('B', 3),   # BME 3632 - BME Transport
     ('A', 0)    # BME 4930 - Undergraduate Seminar (0 credits, pass/fail)
+    # Electives and other BME-specific courses can be added here as needed
 ]
 
 # Initialize variables
