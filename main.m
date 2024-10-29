@@ -35,9 +35,9 @@ totalGradePoints = 0;
 totalCredits = 0;
 
 % Loop through each course to calculate total grade points and credits
-for i = 1:size(courses, 1)
-    grade = courses{i, 1};  % Grade as a letter (e.g., 'A', 'B+')
-    credits = courses{i, 2}; % Credit hours for the course
+for ii = 1:size(courses, 1)
+    grade = courses{ii, 1};  % Grade as a letter (e.g., 'A', 'B+')
+    credits = courses{ii, 2}; % Credit hours for the course
     
     % Check if the grade exists in the grade scale map
     if gradeScale.isKey(grade) && credits > 0 % Exclude courses with 0 credits
@@ -50,9 +50,9 @@ for i = 1:size(courses, 1)
         % Add the course credits to the total credits
         totalCredits = totalCredits + credits;
     elseif credits == 0
-        fprintf('Course %d is pass/fail with no credits.\n', i);
+        fprintf('Course %d is pass/fail with no credits.\n', ii);
     else
-        fprintf('Invalid grade "%s" for course %d\n', grade, i);
+        fprintf('Invalid grade "%s" for course %d\n', grade, ii);
     end
 end
 
